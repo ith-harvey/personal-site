@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/needMoreJava/personalSite#readme",
   "devDependencies": {
+    "grunt": "^1.0.1",
     "nodemon": "^1.11.0"
   }
 }
