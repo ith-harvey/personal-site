@@ -3,10 +3,11 @@ const app = express();
 const path = require('path');
 
 
-app.set('public', path.join(__dirname, 'public'));
+// app.set('public', path.join(__dirname, 'public'));
+
 app.set('view engine', 'ejs');
 
-app.use(express.static('views'));
+app.use(express.static('public'));
 
 app.get('/', function(req, res) {
     res.render('pages/index.ejs');
