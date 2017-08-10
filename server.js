@@ -17,5 +17,5 @@ app.get('/direction', function(req, res) {
     res.render('pages/direction.ejs');
 });
 
-app.listen(8080);
-console.log('8080 is the magic port');
+app.listen(4000);
+console.log('4000 is the magic port');
