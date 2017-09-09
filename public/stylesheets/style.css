@@ -5,6 +5,7 @@ html {
 
 .splash {
   height: 100%;
+  width:100%;
   background-color: #489ac9;
 }
 
@@ -17,10 +18,20 @@ html {
   height: 10rem;
 }
 
-.splash-content-1 {
-  display: none;
+.splash-content-1 h2 {
+  color: white;
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  font-size: 4.5rem;
 }
 
-.splash-content-2 {
-  display: hide;
+.splash-content-1, .splash-content-2, .splash-statement-1, .splash-statement-2, .splash-statement-3 {
+  visibility: hidden;
+}
+
+.padding-right {
+  margin-right: 8px;
+}
+
+.arrow {
+  color: white;
 }
