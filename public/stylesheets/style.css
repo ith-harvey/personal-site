@@ -1,138 +1,26 @@
 html {
-  width: 100%; }
-
-.jumbotron {
   width: 100%;
-  height: 545px;
-  top: 0px;
-  position: relative;
-  text-align: center; }
+  font-size: 16px;
+}
 
-#big-square-border {
-  width: 65%;
-  height: 80%;
-  border: 20px solid red;
-  border-radius: 10px;
-  display: inline-block;
-  margin: 6% 0px 0px 0px; }
+.splash {
+  height: 100%;
+  background-color: #489ac9;
+}
 
-#verticle-rectangle-1 {
-  width: 8%;
-  height: 60%;
-  background-color: #D5B9F4;
-  display: inline-block;
-  position: absolute;
-  top: 0%;
-  left: 20%;
-  opacity: .8; }
-
-#verticle-rectangle-2 {
-  width: 20%;
-  height: 80%;
-  background-color: #B2E7FE;
-  display: inline-block;
-  position: absolute;
-  top: 70%;
-  right: 30%;
-  opacity: 0;
-  transition: opacity 1s linear; }
-
-.chevyron {
-  border-width: 2em 2em 0 0;
-  display: inline-block;
-  height: 9em;
-  position: absolute;
-  border-style: solid;
-  vertical-align: top;
-  width: 9em; }
-
-#chevyron-1 {
-  top: 45%;
-  left: 70%;
-  transform: rotate(45deg); }
-
-#chevyron-2 {
-  top: 45%;
-  left: 50%;
-  transform: rotate(45deg);
-  border-color: #ffaa80; }
-
-.jumbotron h1 {
-  font-family: "arial", Arial, sans-serif;
-  font-size: 90px;
-  position: absolute;
-  top: 305px;
-  left: 150px;
-  width: 30%;
-  text-align: right;
-  background-color: #B2E7FE;
+.splash p {
   color: white;
-  line-height: .85em; }
+}
 
-nav {
-  top: 0px;
-  height: 80px;
-  background-color: white;
-  width: 100%; }
+.img-profile {
+  width: 10rem;
+  height: 10rem;
+}
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  margin-left: 100px; }
+.splash-content-1 {
+  display: none;
+}
 
-nav ul li {
-  list-style: none;
-  font-family: "arial", Arial, sans-serif;
-  font-size: 20px;
-  text-transform: capitalize; }
-
-nav ul li a {
-  text-decoration: none;
-  float: left;
-  color: #606060;
-  line-height: 80px;
-  padding: 0px 20px;
-  Margin-top: 0px;
-  Margin-bottom: 0px;
-  -webkit-transition: .5s ease-in-out;
-  font-weight: lighter;
-  text-transform: capitalize; }
-
-nav ul li a:hover {
-  color: lightblue;
-  Margin-bottom: 0px; }
-
-#personal-statement {
-  width: 40%;
-  text-align: center;
-  height: 18%;
-  margin: 0px 0px 0px 6%; }
-
-h2 {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-  text-align: left;
-  font-family: "austin", austin italic, serif;
-  font-size: 48px;
-  font-style: italic; }
-
-#personal-statement p {
-  font-family: "arial", Arial, sans-serif;
-  font-size: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  text-align: left; }
-
-#gif-div {
-  width: 40%;
-  text-align: center;
-  height: 35%;
-  margin: 0px 0px 0px 30%;
-  opacity: 0;
-  transition: opacity 3.5s linear; }
-
-#gif-div iframe {
-  width: 40em;
-  height: 40em; }
+.splash-content-2 {
+  display: hide;
+}
