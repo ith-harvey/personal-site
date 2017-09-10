@@ -1,3 +1,15 @@
+
+.side-tech {
+  width: 3.5rem;
+  padding: 5px 5 5px 5;
+  margin: auto;
+}
+
+[class^="side-tech-card"].card {
+  margin-left: 1rem;
+  visibility: hidden;
+}
+
 .side-tech-card-container {
     display: flex;
     flex-direction: row;

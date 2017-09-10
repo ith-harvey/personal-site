@@ -1,0 +1,13 @@
+
+
+
+.img-signature-background {
+  transform: rotate(-30deg);
+  opacity: .1;
+  position: absolute;
+  margin-left: -325px;
+  margin-top: -200px;
+  z-index: -3;
+  height: 125%;
+
+}
