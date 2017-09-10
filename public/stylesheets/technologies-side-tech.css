@@ -1,0 +1,14 @@
+.side-tech-card-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.css3-logo {
+  height: 4rem;
+}
+
+.postgresql-logo {
+  height: 4rem;
+  width: 4.25rem;
+}

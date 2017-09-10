@@ -44,7 +44,11 @@ html {
   color: white;
   font-family: GillSans, Calibri, Trebuchet, sans-serif;
   font-size: 4.5rem;
-  line-height: 3rem;
+}
+
+.green-backdrop h4 {
+  color: white;
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
 }
 
 .splash-content-1, .splash-content-2, .splash-statement-1, .splash-statement-2, .splash-statement-3 {
@@ -86,8 +90,6 @@ html {
 
 .img-mockup-laptop{
   height: 20rem;
-
-
 }
 
 .about-margin {
@@ -103,5 +105,5 @@ html {
   flex-direction: column;
   border-radius: 25px;
   border: 2px solid white;
-  height: 60%;
+  height: 50%;
 }
