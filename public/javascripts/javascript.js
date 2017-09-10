@@ -62,8 +62,8 @@ $(document).ready( function () {
 
   function drawTechScores () {
     // setTimeout( function () {
-      $('.skillbar-1').addClass('showing-skill').css("width", "100%")
-      $('.skillbar-2').addClass('showing-skill').css("width", "45%")
+      $('.skillbar-1').addClass('showing-skill').css("width", "89%").css('visibility','visible').css("animated fadeInLeft")
+      $('.skillbar-2').addClass('showing-skill').css("width", "83%")
       $('.skillbar-3').addClass('showing-skill').css("width", "66%")
       $('.skillbar-4').addClass('showing-skill').css("width", "70%")
 

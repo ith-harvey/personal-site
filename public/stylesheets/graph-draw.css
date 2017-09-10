@@ -19,6 +19,14 @@
     width: 0px;
    }
 
+   .skillbar-1 {
+     background-color: #f4c950;
+   }
+
+   .skillbar-2 {
+     background-color: #333333;
+   }
+
   .skillbar-hold-1, .skillbar-hold-2, .skillbar-hold-3, .skillbar-hold-4 {
     display: flex;
     flex: 1;

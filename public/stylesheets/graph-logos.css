@@ -1,0 +1,17 @@
+
+
+
+.logo-skill-bar {
+    height: 3rem;
+    padding-top: .2%;
+    margin-left: 1%;
+    /*visibility: hidden;*/
+
+}
+
+.logo-skill-bar-node {
+    height: 3rem;
+    padding-top: .9%;
+    margin-left: 4%;
+    /*visibility: hidden;*/
+}
