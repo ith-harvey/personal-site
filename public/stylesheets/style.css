@@ -44,6 +44,7 @@ html {
   color: white;
   font-family: GillSans, Calibri, Trebuchet, sans-serif;
   font-size: 4.5rem;
+  line-height: 3rem;
 }
 
 .splash-content-1, .splash-content-2, .splash-statement-1, .splash-statement-2, .splash-statement-3 {
@@ -72,15 +73,21 @@ html {
   z-index: -100;
 }
 
+.mockup-contain {
+  height: 20rem;
+  margin-left: 10%;
+}
+
 .img-mockup-phone{
   height: 20rem;
+  position: absolute;
+  margin-top: -5%;
 }
 
 .img-mockup-laptop{
   height: 20rem;
-  position: absolute;
-  top: 1150px;
-  right: 90px;
+
+
 }
 
 .about-margin {
@@ -96,5 +103,5 @@ html {
   flex-direction: column;
   border-radius: 25px;
   border: 2px solid white;
-  height: 70%;
+  height: 60%;
 }

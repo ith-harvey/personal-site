@@ -54,18 +54,29 @@ $(document).ready( function () {
   }
 
   function drawMarkerLines() {
-    $('.skillmarker-1').addClass('showing').css("height", "70%").css("left", "30%")
-    $('.skillmarker-2').addClass('showing').css("height", "70%").css("left", "43%")
-    $('.skillmarker-3').addClass('showing').css("height", "70%").css("left", "56%")
-    $('.skillmarker-4').addClass('showing').css("height", "70%").css("left", "69%")
+    $('.skillmarker-1').addClass('showing').css("height", "60%").css("left", "30%")
+    $('.skillnumber-1').css('visibility','visible').css("left", "29.75%").addClass('animated fadeInLeft viewed')
+
+    $('.skillmarker-2').addClass('showing').css("height", "60%").css("left", "43%")
+    $('.skillnumber-2').css('visibility','visible').css("left", "42.75%").addClass('animated fadeInLeft viewed')
+
+    $('.skillmarker-3').addClass('showing').css("height", "60%").css("left", "56%")
+    $('.skillnumber-3').css('visibility','visible').css("left", "55.75%").addClass('animated fadeInLeft viewed')
+
+    $('.skillmarker-4').addClass('showing').css("height", "60%").css("left", "69%")
+    $('.skillnumber-4').css('visibility','visible').css("left", "68.75%").addClass('animated fadeInLeft viewed')
+
     }
 
   function drawTechScores () {
     // setTimeout( function () {
-      $('.skillbar-1').addClass('showing-skill').css("width", "89%").css('visibility','visible').css("animated fadeInLeft")
+      $('.skillbar-1').addClass('showing-skill').css("width", "89%")
       $('.skillbar-2').addClass('showing-skill').css("width", "83%")
       $('.skillbar-3').addClass('showing-skill').css("width", "66%")
       $('.skillbar-4').addClass('showing-skill').css("width", "70%")
+      setTimeout( () => {
+        $('.logo-skill').addClass('animated fadeInLeft').css("visibility", "visible")
+      }, 1500)
 
     // }, 2000)
   }
