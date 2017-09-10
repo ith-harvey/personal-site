@@ -2,6 +2,12 @@
 
 $(document).ready( function () {
 
+  var $window = $(window);
+
+  setInterval( function () {
+    scrollCheck()
+  }, 500)
+
   $('.splash-content-1').css('visibility','visible').addClass('animated bounceinUp');
   setTimeout(function () {
     $('.splash-content-2').css('visibility','visible').addClass('animated bounceinUp');
@@ -25,6 +31,43 @@ $(document).ready( function () {
 
   setTimeout(function () {
   $('.arrow').removeClass('bounceinUp').addClass('bounce')
-}, 5000)
+  }, 5000)
+
+
+
+  function scrollCheck() {
+    if ($(document).scrollTop() > 750){
+      mockUpFadeIn()
+    }
+    if ($(document).scrollTop() > 1480) {
+      drawMarkerLines()
+      drawTechScores()
+    }
+
+  }
+
+  function mockUpFadeIn() {
+    if (!($('.img-mockup-phone').hasClass('viewed'))) {
+    $('.img-mockup-phone').css('visibility','visible').addClass('animated fadeInRight viewed')
+    $('.img-mockup-laptop').css('visibility','visible').addClass('animated fadeInRight viewed')
+    }
+  }
+
+  function drawMarkerLines() {
+    $('.skillmarker-1').addClass('showing').css("height", "70%").css("left", "30%")
+    $('.skillmarker-2').addClass('showing').css("height", "70%").css("left", "43%")
+    $('.skillmarker-3').addClass('showing').css("height", "70%").css("left", "56%")
+    $('.skillmarker-4').addClass('showing').css("height", "70%").css("left", "69%")
+    }
+
+  function drawTechScores () {
+    // setTimeout( function () {
+      $('.skillbar-1').addClass('showing-skill').css("width", "100%")
+      $('.skillbar-2').addClass('showing-skill').css("width", "45%")
+      $('.skillbar-3').addClass('showing-skill').css("width", "66%")
+      $('.skillbar-4').addClass('showing-skill').css("width", "70%")
+
+    // }, 2000)
+  }
 
 })

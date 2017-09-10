@@ -1,0 +1,49 @@
+
+
+  .skillmarker-1, .skillmarker-2, .skillmarker-3, .skillmarker-4 {
+    position: absolute;
+    background-color: white;
+    display: inline-block;
+    width: 2px;
+    height: 0px;
+   }
+
+  .showing {
+    transition: height 1.5s;
+  }
+
+  .skillbar-1, .skillbar-2, .skillbar-3, .skillbar-4 {
+    background-color: white;
+    display: block;
+    height: 11%;
+    width: 0px;
+   }
+
+  .skillbar-hold-1, .skillbar-hold-2, .skillbar-hold-3, .skillbar-hold-4 {
+    display: flex;
+    flex: 1;
+  }
+
+  .skillbar-hold-1 {
+    order: 1;
+  }
+
+  .skillbar-hold-2 {
+    order: 2;
+  }
+
+  .skillbar-hold-3 {
+    order: 3;
+  }
+
+  .skillbar-hold-4 {
+    order: 4;
+  }
+
+  .skillbar-hold-5 {
+    order: 5;
+  }
+
+  .showing-skill {
+    transition: width 2s 1.1s;
+  }
