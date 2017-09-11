@@ -45,6 +45,9 @@ $(document).ready( function () {
       drawLogos()
       drawSideTech()
     }
+    if ($(document).scrollTop() > 1900) {
+      drawWorkUnderline()
+    }
 
   }
 
@@ -110,6 +113,11 @@ $(document).ready( function () {
     setTimeout( () => {
       $('.side-tech-card-9').addClass('animated flipInX').css("visibility", "visible")
     }, 2800)
+  }
+
+  function drawWorkUnderline() {
+      $('.title-underline').addClass('showing-skill').css("width", "53%")
+
   }
 
 })
