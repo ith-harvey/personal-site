@@ -29,7 +29,7 @@ html {
 
 .green-backdrop {
   margin: 8rem 0 0 0;
-  background-color: #41ba7d;
+  background-color: white;
 }
 
 .splash p {
@@ -47,8 +47,8 @@ html {
   font-size: 4.5rem;
 }
 
-.green-backdrop h4 {
-  color: white;
+.green-backdrop h1 {
+  color: #41ba7d;
   font-family: GillSans, Calibri, Trebuchet, sans-serif;
 }
 
@@ -109,6 +109,6 @@ html {
   display: flex;
   flex-direction: column;
   border-radius: 25px;
-  border: 2px solid white;
+  border: 2px solid #41ba7d;
   height: 50%;
 }
