@@ -14,6 +14,10 @@
     margin-top: -30px;
    }
 
+ .skillnumber-4{
+   margin-top: -51px;
+ }
+
   .skillmarker-1, .skillmarker-2, .skillmarker-3, .skillmarker-4 {
     position: absolute;
     display: inline-block;
@@ -33,7 +37,7 @@
     background: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 27%,#41ba7d 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right,  #ffffff 0%,#ffffff 27%,#41ba7d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#41ba7d',GradientType=1 ); /* IE6-9 */
-    
+
     display: block;
     height: 14%;
     width: 0px;

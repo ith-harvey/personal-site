@@ -67,24 +67,24 @@ $(document).ready( function () {
   }
 
   function drawMarkerLines() {
-    $('.skillmarker-1').addClass('showing').css("height", "50%").css("left", "30%")
-    $('.skillnumber-1').css('visibility','visible').css("left", "29.75%").addClass('animated fadeInLeft viewed')
+    $('.skillmarker-1').addClass('showing').css("height", "47.5%").css("left", "30%")
+    $('.skillnumber-1').css('visibility','visible').css("left", "29%").addClass('animated fadeInLeft viewed')
 
-    $('.skillmarker-2').addClass('showing').css("height", "50%").css("left", "43%")
-    $('.skillnumber-2').css('visibility','visible').css("left", "42.75%").addClass('animated fadeInLeft viewed')
+    $('.skillmarker-2').addClass('showing').css("height", "47.5%").css("left", "43%")
+    $('.skillnumber-2').css('visibility','visible').css("left", "40.5%").addClass('animated fadeInLeft viewed')
 
-    $('.skillmarker-3').addClass('showing').css("height", "50%").css("left", "56%")
-    $('.skillnumber-3').css('visibility','visible').css("left", "55.75%").addClass('animated fadeInLeft viewed')
+    $('.skillmarker-3').addClass('showing').css("height", "47.5%").css("left", "56%")
+    $('.skillnumber-3').css('visibility','visible').css("left", "53.75%").addClass('animated fadeInLeft viewed')
 
-    $('.skillmarker-4').addClass('showing').css("height", "50%").css("left", "69%")
-    $('.skillnumber-4').css('visibility','visible').css("left", "68.75%").addClass('animated fadeInLeft viewed')
+    $('.skillmarker-4').addClass('showing').css("height", "47.5%").css("left", "69%")
+    $('.skillnumber-4').css('visibility','visible').css("left", "65.5%").addClass('animated fadeInLeft viewed')
     }
 
   function drawTechScores () {
-      $('.skillbar-1').addClass('showing-skill').css("width", "89%")
-      $('.skillbar-2').addClass('showing-skill').css("width", "83%")
-      $('.skillbar-3').addClass('showing-skill').css("width", "66%")
-      $('.skillbar-4').addClass('showing-skill').css("width", "70%")
+      $('.skillbar-1').addClass('showing-skill').css("width", "76%")
+      $('.skillbar-2').addClass('showing-skill').css("width", "65%")
+      $('.skillbar-3').addClass('showing-skill').css("width", "54%")
+      $('.skillbar-4').addClass('showing-skill').css("width", "47%")
   }
 
   function drawLogos() {
