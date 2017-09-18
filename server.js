@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-
+const PORT = process.env.PORT || 4000
 
 // app.set('public', path.join(__dirname, 'public'));
 
@@ -17,5 +17,5 @@ app.get('/direction', function(req, res) {
     res.render('pages/direction.ejs');
 });
 
-app.listen(4000);
-console.log('4000 is the magic port');
+app.listen(PORT);
+console.log(`${PORT}is the magic port`);
