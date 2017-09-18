@@ -18,6 +18,14 @@ html {
     width: 70%;
 }
 
+.side-contents{
+  position: fixed;
+  overflow-y: hidden;
+  width: 20%;
+  height: 20%;
+  visibility: hidden;
+}
+
 .splash, .green-backdrop, .work-backdrop{
   height: 100%;
   width:100%;

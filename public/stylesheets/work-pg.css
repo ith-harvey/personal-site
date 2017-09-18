@@ -27,3 +27,35 @@
 .title-contain {
   margin-bottom: -33px;
 }
+
+.card-mini-image {
+  height: 2.5rem;
+  background-color: white;
+}
+
+.card-mini-button {
+  margin-right: 5px;
+  height: 2.5rem;
+}
+
+.work-holder {
+  display: flex;
+}
+
+.card-action-buttons {
+  width: 100%;
+  height: 42px;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: -18px 0 0 0;
+  padding-right: 14px;
+}
+
+.flexcolumn-inside-flex{
+  flex:1;
+}
+
+.inner-card{
+  width: 90%;
+}

@@ -1,6 +1,7 @@
 
 
 $(document).ready( function () {
+  $('.scrollspy').scrollSpy();
 
   var $window = $(window);
 
@@ -36,19 +37,26 @@ $(document).ready( function () {
 
 
   function scrollCheck() {
-    if ($(document).scrollTop() > 750){
+    if ($(document).scrollTop() > 500){
+      navigationFadein()
+    }
+    if ($(document).scrollTop() > 600){
       mockUpFadeIn()
     }
-    if ($(document).scrollTop() > 1480) {
+    if ($(document).scrollTop() > 1300) {
       drawMarkerLines()
       drawTechScores()
       drawLogos()
       drawSideTech()
     }
-    if ($(document).scrollTop() > 1900) {
+    if ($(document).scrollTop() > 1730) {
       drawWorkUnderline()
     }
 
+  }
+
+  function navigationFadein () {
+    $('.side-contents').css('visibility','visible').addClass('animated fadeInLeft viewed')
   }
 
   function mockUpFadeIn() {
@@ -113,10 +121,13 @@ $(document).ready( function () {
     setTimeout( () => {
       $('.side-tech-card-9').addClass('animated flipInX').css("visibility", "visible")
     }, 2800)
+    setTimeout( () => {
+      $('.side-tech-card-10').addClass('animated flipInX').css("visibility", "visible")
+    }, 2900)
   }
 
   function drawWorkUnderline() {
-      $('.title-underline').addClass('showing-skill').css("width", "53%")
+    $('.title-underline').addClass('showing-skill').css("width", "53%")
 
   }
 
