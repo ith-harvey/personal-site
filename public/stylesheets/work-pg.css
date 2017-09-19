@@ -12,7 +12,7 @@
 }
 
 .title-work-above{
-  height: 12rem;
+  height: 2.5rem;
 }
 
 .title-underline {
@@ -40,6 +40,7 @@
 
 .work-holder {
   display: flex;
+  justify-content: center;
 }
 
 .card-action-buttons {
@@ -52,10 +53,7 @@
   padding-right: 14px;
 }
 
-.flexcolumn-inside-flex{
-  flex:1;
-}
 
 .inner-card{
-  width: 90%;
+  width: 25%;
 }

@@ -1,0 +1,26 @@
+.div-center-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.centered-div{
+  width: 60%;
+  text-align: center;
+}
+
+.centered-inner-title{
+  width: 100%;
+  margin-bottom: 5rem;
+  color: #41ba7d;
+}
+
+.centered-inner-text{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.email-btn {
+  margin-top: 2rem;
+}

@@ -2,20 +2,14 @@ html {
   width: 100%;
   font-size: 16px;
   overflow-x: hidden;
+  min-width: 601px;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1280px;
   width: 80%;
-}
-@media only screen and (min-width: 601px)
-  .container {
-    width: 85%;
-}
-@media only screen and (min-width: 993px)
-  .container {
-    width: 70%;
+  min-width: 601px;
 }
 
 .side-contents{
@@ -26,16 +20,16 @@ html {
   visibility: hidden;
 }
 
-.splash, .green-backdrop, .work-backdrop{
+.splash, .green-backdrop, .work-backdrop, .contact-backdrop {
   height: 100%;
   width:100%;
-
 }
+
 .splash {
   background-color: #489ac9;
 }
 
-.green-backdrop {
+.green-backdrop, .contact-backdrop {
   margin: 8rem 0 0 0;
   background-color: white;
 }
