@@ -1,26 +1,56 @@
 html {
   width: 100%;
   font-size: 16px;
-  overflow-x: hidden;
-  min-width: 601px;
 }
 
-@media screen and (max-width:760px) {
+html, body {
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 80%;
+}
+
+@media all and (max-width:760px)
+  and (min-device-width: 0px) {
+
   html {
-    font-size: 12px;
+    width: 100%;
+    min-width: 0px;
   }
+
+  .container {
+    margin: 0 auto;
+    width: 95%;
+  }
+
   .nav-mat {
     display: block !important;
   }
-  .container{
-    min-width: 500px;
-  }
+
   .side-contents{
     display: none !important;
   }
-  .img-mockup-laptop, .img-mockup-phone {
-    display: none;
+
+  .hide-for-mobile {
+    display: none !important;
   }
+  .work-holder{
+    width: 100%;
+  }
+  .work-holder > div {
+    width: 100% !important;
+    display: block !important;
+  }
+  .work-backdrop {
+    height: auto !important;
+  }
+  .centered-div {
+    width: 100% !important;
+  }
+
 }
 
 .nav-mat {
@@ -31,7 +61,6 @@ html {
   margin: 0 auto;
   max-width: 1280px;
   width: 80%;
-  min-width: 601px;
 }
 
 .side-contents{
@@ -44,7 +73,7 @@ html {
 
 .splash, .green-backdrop, .work-backdrop, .contact-backdrop {
   height: 100%;
-  width:100%;
+  width: 100%;
 }
 
 .splash {

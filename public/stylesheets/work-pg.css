@@ -63,7 +63,7 @@
 }
 
 .inner-card {
-  height: 65%;
+  min-width: 30%;
 }
 
 .inner-card-left{
