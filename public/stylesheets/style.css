@@ -5,6 +5,28 @@ html {
   min-width: 601px;
 }
 
+@media screen and (max-width:760px) {
+  html {
+    font-size: 12px;
+  }
+  .nav-mat {
+    display: block !important;
+  }
+  .container{
+    min-width: 500px;
+  }
+  .side-contents{
+    display: none !important;
+  }
+  .img-mockup-laptop, .img-mockup-phone {
+    display: none;
+  }
+}
+
+.nav-mat {
+  display: none;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1280px;
@@ -48,7 +70,6 @@ html {
   font-family: GillSans, Calibri, Trebuchet, sans-serif;
   margin-bottom: 2rem;
   margin-top: 0;
-
 }
 
 .splash-content-1 h2, .green-backdrop h1 {
