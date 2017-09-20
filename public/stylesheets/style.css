@@ -43,10 +43,19 @@ html {
   height: 10rem;
 }
 
+.splash-content-1 h4 {
+  color: white;
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  margin-bottom: 2rem;
+  margin-top: 0;
+
+}
+
 .splash-content-1 h2, .green-backdrop h1 {
   color: white;
   font-family: GillSans, Calibri, Trebuchet, sans-serif;
   font-size: 4.5rem;
+  margin-bottom: 1rem;
 }
 
 .green-backdrop h1 {

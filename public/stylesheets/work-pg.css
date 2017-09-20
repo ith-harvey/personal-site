@@ -37,10 +37,19 @@
   margin-right: 5px;
   height: 2.5rem;
 }
-
 .work-holder {
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.work-holder > div {
+  display: inline-block;
+  display: -moz-inline-box;
+  *display: inline; /* For IE7 */
+  zoom: 1; /* Trigger hasLayout */
+  width: 31.7%;
+  text-align: left;
+  vertical-align: top;
 }
 
 .card-action-buttons {
@@ -53,7 +62,14 @@
   padding-right: 14px;
 }
 
+.inner-card {
+  height: 65%;
+}
 
-.inner-card{
-  width: 25%;
+.inner-card-left{
+  margin-right: 2%;
+}
+
+.inner-card-right {
+  margin-left: 2%;
 }
