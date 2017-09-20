@@ -26,6 +26,12 @@ html, body {
     width: 95%;
   }
 
+  .mega-header-faded {
+    font-size: 10rem !important;
+    margin-top: -1rem !important;
+    margin-left: -1rem !important;
+  }
+
   .nav-mat {
     display: block !important;
   }
@@ -50,13 +56,11 @@ html, body {
   .centered-div {
     width: 100% !important;
   }
-
 }
 
 .nav-mat {
   display: none;
 }
-
 .container {
   margin: 0 auto;
   max-width: 1280px;
@@ -71,9 +75,13 @@ html, body {
   visibility: hidden;
 }
 
-.splash, .green-backdrop, .work-backdrop, .contact-backdrop {
+.splash, .green-backdrop, .contact-backdrop {
   height: 100%;
   width: 100%;
+}
+.work-backdrop {
+  width: 100%;
+  height: auto;
 }
 
 .splash {
