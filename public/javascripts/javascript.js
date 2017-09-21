@@ -124,6 +124,18 @@ $(document).ready( function () {
     setTimeout( () => {
       $('.side-tech-card-10').addClass('animated flipInX').css("visibility", "visible")
     }, 2900)
+    setTimeout( () => {
+      $('.side-tech-card-11').addClass('animated flipInX').css("visibility", "visible")
+    }, 3000)
+    setTimeout( () => {
+      $('.side-tech-card-12').addClass('animated flipInX').css("visibility", "visible")
+    }, 3100)
+    setTimeout( () => {
+      $('.side-tech-card-13').addClass('animated flipInX').css("visibility", "visible")
+    }, 3200)
+    setTimeout( () => {
+      $('.side-tech-card-14').addClass('animated flipInX').css("visibility", "visible")
+    }, 3300)
   }
 
   function drawWorkUnderline() {

@@ -32,6 +32,10 @@ html, body {
     margin-left: -1rem !important;
   }
 
+  .splash-content-1 h2, .green-backdrop h1 {
+    font-size: 3rem !important;
+  }
+
   .nav-mat {
     display: block !important;
   }
@@ -39,9 +43,11 @@ html, body {
   .side-contents{
     display: none !important;
   }
-
   .hide-for-mobile {
     display: none !important;
+  }
+  .show-for-mobile {
+    display: block !important;
   }
   .work-holder{
     width: 100%;
@@ -75,11 +81,11 @@ html, body {
   visibility: hidden;
 }
 
-.splash, .green-backdrop, .contact-backdrop {
+.splash, .green-backdrop {
   height: 100%;
   width: 100%;
 }
-.work-backdrop {
+.work-backdrop, .contact-backdrop {
   width: 100%;
   height: auto;
 }
@@ -114,11 +120,6 @@ html, body {
   font-family: GillSans, Calibri, Trebuchet, sans-serif;
   font-size: 4.5rem;
   margin-bottom: 1rem;
-}
-
-.green-backdrop h1 {
-  color: #41ba7d;
-  font-family: GillSans, Calibri, Trebuchet, sans-serif;
 }
 
 .work-backdrop h2 {
