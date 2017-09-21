@@ -1,6 +1,6 @@
 @media all and (max-width:760px)
   and (min-device-width: 0px) {
-    
+
   html {
     width: 100%;
     min-width: 0px;
@@ -12,40 +12,44 @@
   }
 
   .mega-header-faded {
-    font-size: 10rem !important;
-    margin-top: -1rem !important;
-    margin-left: -1rem !important;
+    font-size: 10rem;
+    margin-top: -1rem;
+    margin-left: -1rem;
   }
 
   .splash-content-1 h2, .green-backdrop h1 {
-    font-size: 3rem !important;
+    font-size: 3rem;
   }
 
   .nav-mat {
-    display: block !important;
+    display: block;
   }
 
   .side-contents{
-    display: none !important;
+    display: none;
   }
   .hide-for-mobile {
-    display: none !important;
+    display: none;
   }
   .show-for-mobile {
-    display: block !important;
+    display: block;
   }
   .work-holder{
     width: 100%;
   }
   .work-holder > div {
-    width: 98% !important;
-    display: block !important;
+    width: 98% ;
+    display: block ;
   }
   .work-backdrop {
-    height: auto !important;
+    height: auto;
   }
+  .title-underline {
+    width: 62% !important;
+  }
+
   .centered-div {
-    width: 100% !important;
+    width: 100%;
   }
   .contact-backdrop {
     margin-bottom: 3rem;
@@ -55,6 +59,6 @@
 @media all and (max-width:370px)
   and (min-device-width: 0px) {
     .nav-mat {
-      display: none !important;
+      display: none;
     }
   }
