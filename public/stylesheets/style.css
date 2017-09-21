@@ -13,57 +13,6 @@ html, body {
   width: 80%;
 }
 
-@media all and (max-width:760px)
-  and (min-device-width: 0px) {
-
-  html {
-    width: 100%;
-    min-width: 0px;
-  }
-
-  .container {
-    margin: 0 auto;
-    width: 95%;
-  }
-
-  .mega-header-faded {
-    font-size: 10rem !important;
-    margin-top: -1rem !important;
-    margin-left: -1rem !important;
-  }
-
-  .splash-content-1 h2, .green-backdrop h1 {
-    font-size: 3rem !important;
-  }
-
-  .nav-mat {
-    display: block !important;
-  }
-
-  .side-contents{
-    display: none !important;
-  }
-  .hide-for-mobile {
-    display: none !important;
-  }
-  .show-for-mobile {
-    display: block !important;
-  }
-  .work-holder{
-    width: 100%;
-  }
-  .work-holder > div {
-    width: 100% !important;
-    display: block !important;
-  }
-  .work-backdrop {
-    height: auto !important;
-  }
-  .centered-div {
-    width: 100% !important;
-  }
-}
-
 .nav-mat {
   display: none;
 }
