@@ -59,7 +59,6 @@ $(document).ready( function () {
         this.numberLeft = numberLeft
         this.showSkillMarker()
       }
-
       showSkillMarker () {
         $(`.skillmarker-${this.selectorNum}`).addClass('showing').css("height", "47.5%").css("left", this.left)
         $(`.skillnumber-${this.selectorNum}`).css('visibility','visible').css("left", this.numberLeft).addClass('animated fadeInLeft viewed')
@@ -70,7 +69,6 @@ $(document).ready( function () {
     new Marker('2',"43%","40.5%")
     new Marker('3',"56%","53.75%")
     new Marker('4',"69%","65.5%")
-
     }
 
   function drawTechScores () {
