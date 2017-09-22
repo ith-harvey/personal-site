@@ -1,6 +1,7 @@
 
 
 $(document).ready( function () {
+
   $('.scrollspy').scrollSpy({scrollOffset: 0});
 
   var $window = $(window);
@@ -9,34 +10,109 @@ $(document).ready( function () {
     scrollCheck()
   }, 500)
 
-  $('.splash-content-1').css('visibility','visible').addClass('animated bounceinUp');
-  setTimeout(function () {
-    $('.splash-content-2').css('visibility','visible').addClass('animated bounceinUp');
-  }, 600)
+  function splashPage() {
+    const splashConentArr = ['.splash-statement-1', '.splash-statement-2', '.splash-statement-3']
 
-  setTimeout(function () {
-    $('.splash-statement-1').css('visibility','visible').addClass('animated fadeInUp');
-  }, 800)
+    $('.splash-content-1').css('visibility','visible').addClass('animated bounceinUp');
 
-  setTimeout(function () {
-    $('.splash-statement-2').css('visibility','visible').addClass('animated fadeInUp');
-  }, 1000)
+    setTimeout(function () {
+      $('.splash-content-2').css('visibility','visible').addClass('animated bounceinUp');
+    }, 600)
 
-  setTimeout(function () {
-    $('.splash-statement-3').css('visibility','visible').addClass('animated fadeInUp');
-  }, 1200)
+    setTimeout(function () {
+      splashConentArr.forEach( function(selector, i) {
+        (function(selector, i) {
+          setTimeout( () => {
+            $(selector).css('visibility','visible').addClass('animated fadeInUp')
+          }, i * 200)
+        })(selector, i)
+      })
+    }, 1200)
 
-  setTimeout(function () {
-    $('.arrow').css('visibility','visible').addClass('animated bounceinUp');
-  }, 3500)
+    setTimeout(function () {
+      $('.arrow').css('visibility','visible').addClass('animated bounceinUp');
+    }, 3500)
 
-  setTimeout(function () {
-  $('.arrow').removeClass('bounceinUp').addClass('bounce')
-  }, 5000)
+    setTimeout(function () {
+    $('.arrow').removeClass('bounceinUp').addClass('bounce')
+    }, 5000)
+  }
 
 
+  function navigationFadein () {
+    $('.side-contents').css('visibility','visible').addClass('animated fadeInLeft viewed')
+  }
+
+  function mockUpFadeIn() {
+    if (!($('.img-mockup-phone').hasClass('viewed'))) {
+    $('.img-mockup-phone').css('visibility','visible').addClass('animated fadeInRight viewed')
+    $('.img-mockup-laptop').css('visibility','visible').addClass('animated fadeInRight viewed')
+    }
+  }
+
+  function drawMarkerLines() {
+
+    class Marker {
+      constructor(selectorNum, left, numberLeft) {
+        this.selectorNum = selectorNum
+        this.left = left
+        this.numberLeft = numberLeft
+        this.showSkillMarker()
+      }
+
+      showSkillMarker () {
+        $(`.skillmarker-${this.selectorNum}`).addClass('showing').css("height", "47.5%").css("left", this.left)
+        $(`.skillnumber-${this.selectorNum}`).css('visibility','visible').css("left", this.numberLeft).addClass('animated fadeInLeft viewed')
+      }
+    }
+
+    new Marker('1',"30%","29%")
+    new Marker('2',"43%","40.5%")
+    new Marker('3',"56%","53.75%")
+    new Marker('4',"69%","65.5%")
+
+    }
+
+  function drawTechScores () {
+    function showSkill(selector,widthPercent) {
+      $(selector).addClass('showing-skill').css("width", widthPercent)
+    }
+
+    showSkill('.skillbar-1',"76%")
+    showSkill('.skillbar-2',"65%")
+    showSkill('.skillbar-3',"54%")
+    showSkill('.skillbar-4',"47%")
+  }
+
+  function drawLogos() {
+    setTimeout( () => {
+      $('.logo-skill').addClass('animated fadeInLeft').css("visibility", "visible")
+    }, 1500)
+  }
+
+  function drawSideTech() {
+    const sideTechArr = ['.side-tech-card-1', '.side-tech-card-2', '.side-tech-card-3', '.side-tech-card-4', '.side-tech-card-5', '.side-tech-card-6', '.side-tech-card-7', '.side-tech-card-8', '.side-tech-card-9', '.side-tech-card-10', '.side-tech-card-11', '.side-tech-card-12', '.side-tech-card-13', '.side-tech-card-14']
+
+    sideTechArr.forEach( function(selector, i) {
+      (function(selector, i) {
+        setTimeout( () => {
+          $(selector).addClass('animated flipInX').css("visibility", "visible")
+        }, i * 100)
+      })(selector, i)
+    })
+  }
+
+  function flipInSideTechAnimate (selector) {
+    $(selector).addClass('animated flipInX').css("visibility", "visible")
+  }
+
+  function drawWorkUnderline() {
+    $('.title-underline').addClass('showing-skill').css("width", "53%")
+  }
 
   function scrollCheck() {
+    splashPage()
+
     if ($(document).scrollTop() > 500){
       navigationFadein()
     }
@@ -52,95 +128,5 @@ $(document).ready( function () {
     if ($(document).scrollTop() > 1730) {
       drawWorkUnderline()
     }
-
   }
-
-  function navigationFadein () {
-    $('.side-contents').css('visibility','visible').addClass('animated fadeInLeft viewed')
-  }
-
-  function mockUpFadeIn() {
-    if (!($('.img-mockup-phone').hasClass('viewed'))) {
-    $('.img-mockup-phone').css('visibility','visible').addClass('animated fadeInRight viewed')
-    $('.img-mockup-laptop').css('visibility','visible').addClass('animated fadeInRight viewed')
-    }
-  }
-
-  function drawMarkerLines() {
-    $('.skillmarker-1').addClass('showing').css("height", "47.5%").css("left", "30%")
-    $('.skillnumber-1').css('visibility','visible').css("left", "29%").addClass('animated fadeInLeft viewed')
-
-    $('.skillmarker-2').addClass('showing').css("height", "47.5%").css("left", "43%")
-    $('.skillnumber-2').css('visibility','visible').css("left", "40.5%").addClass('animated fadeInLeft viewed')
-
-    $('.skillmarker-3').addClass('showing').css("height", "47.5%").css("left", "56%")
-    $('.skillnumber-3').css('visibility','visible').css("left", "53.75%").addClass('animated fadeInLeft viewed')
-
-    $('.skillmarker-4').addClass('showing').css("height", "47.5%").css("left", "69%")
-    $('.skillnumber-4').css('visibility','visible').css("left", "65.5%").addClass('animated fadeInLeft viewed')
-    }
-
-  function drawTechScores () {
-      $('.skillbar-1').addClass('showing-skill').css("width", "76%")
-      $('.skillbar-2').addClass('showing-skill').css("width", "65%")
-      $('.skillbar-3').addClass('showing-skill').css("width", "54%")
-      $('.skillbar-4').addClass('showing-skill').css("width", "47%")
-  }
-
-  function drawLogos() {
-    setTimeout( () => {
-      $('.logo-skill').addClass('animated fadeInLeft').css("visibility", "visible")
-    }, 1500)
-  }
-
-  function drawSideTech() {
-    setTimeout( () => {
-      $('.side-tech-card-1').addClass('animated flipInX').css("visibility", "visible")
-    }, 2000)
-    setTimeout( () => {
-      $('.side-tech-card-2').addClass('animated flipInX').css("visibility", "visible")
-    }, 2100)
-    setTimeout( () => {
-      $('.side-tech-card-3').addClass('animated flipInX').css("visibility", "visible")
-    }, 2200)
-    setTimeout( () => {
-      $('.side-tech-card-4').addClass('animated flipInX').css("visibility", "visible")
-    }, 2300)
-    setTimeout( () => {
-      $('.side-tech-card-5').addClass('animated flipInX').css("visibility", "visible")
-    }, 2400)
-    setTimeout( () => {
-      $('.side-tech-card-6').addClass('animated flipInX').css("visibility", "visible")
-    }, 2500)
-    setTimeout( () => {
-      $('.side-tech-card-7').addClass('animated flipInX').css("visibility", "visible")
-    }, 2600)
-    setTimeout( () => {
-      $('.side-tech-card-8').addClass('animated flipInX').css("visibility", "visible")
-    }, 2700)
-    setTimeout( () => {
-      $('.side-tech-card-9').addClass('animated flipInX').css("visibility", "visible")
-    }, 2800)
-    setTimeout( () => {
-      $('.side-tech-card-10').addClass('animated flipInX').css("visibility", "visible")
-    }, 2900)
-    setTimeout( () => {
-      $('.side-tech-card-11').addClass('animated flipInX').css("visibility", "visible")
-    }, 3000)
-    setTimeout( () => {
-      $('.side-tech-card-12').addClass('animated flipInX').css("visibility", "visible")
-    }, 3100)
-    setTimeout( () => {
-      $('.side-tech-card-13').addClass('animated flipInX').css("visibility", "visible")
-    }, 3200)
-    setTimeout( () => {
-      $('.side-tech-card-14').addClass('animated flipInX').css("visibility", "visible")
-    }, 3300)
-  }
-
-  function drawWorkUnderline() {
-    $('.title-underline').addClass('showing-skill').css("width", "53%")
-
-  }
-
 })
