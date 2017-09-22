@@ -29,13 +29,6 @@ $(document).ready( function () {
       })
     }, 1200)
 
-    setTimeout(function () {
-      $('.arrow').css('visibility','visible').addClass('animated bounceinUp');
-    }, 3500)
-
-    setTimeout(function () {
-    $('.arrow').removeClass('bounceinUp').addClass('bounce')
-    }, 5000)
   }
 
 
