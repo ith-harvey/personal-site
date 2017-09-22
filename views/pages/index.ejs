@@ -1,66 +1,66 @@
 <html>
 
-<head>
+  <head>
 
 
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-  <!-- animsition.js -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- animsition.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-  <script type="text/javascript" src="./javascripts/javascript.js"></script>
+    <script type="text/javascript" src="./javascripts/javascript.js"></script>
 
 
-  <link rel="stylesheet" href="./stylesheets/style.css">
-  <link rel="stylesheet" href="./stylesheets/graph-draw.css">
-  <link rel="stylesheet" href="./stylesheets/graph-logos.css">
-  <link rel="stylesheet" href="./stylesheets/technologies-side-tech.css">
-  <link rel="stylesheet" href="./stylesheets/animate.css">
-  <link rel="stylesheet" href="./stylesheets/work-pg.css">
-  <link rel="stylesheet" href="./stylesheets/contact-pg.css">
-  <link rel="stylesheet" href="./stylesheets/mobile-screen.css">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/graph-draw.css">
+    <link rel="stylesheet" href="./stylesheets/graph-logos.css">
+    <link rel="stylesheet" href="./stylesheets/technologies-side-tech.css">
+    <link rel="stylesheet" href="./stylesheets/animate.css">
+    <link rel="stylesheet" href="./stylesheets/work-pg.css">
+    <link rel="stylesheet" href="./stylesheets/contact-pg.css">
+    <link rel="stylesheet" href="./stylesheets/mobile-screen.css">
 
-</head>
+  </head>
 
-<body>
+  <body>
 
-  <nav class="nav-mat">
-    <div class="nav-wrapper">
-      <ul id="nav-mobile" class="left">
-        <li><a href="#about-me">about me</a></li>
-        <li><a href="#technologies">technologies</a></li>
-        <li><a href="#work">work</a></li>
-        <li><a href="#contact">contact</a></li>
-      </ul>
+    <nav class="nav-mat">
+      <div class="nav-wrapper">
+        <ul id="nav-mobile" class="left">
+          <li><a href="#about-me">about me</a></li>
+          <li><a href="#technologies">technologies</a></li>
+          <li><a href="#work">work</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="section table-of-contents side-contents">
+      <li><a href="#about-me">about me</a></li>
+      <li><a href="#technologies">technologies</a></li>
+      <li><a href="#work">work</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+
+    <% include ../partials/section_splash %>
+
+    <div class="row">
+      <i class="col s1 offset-s5 arrow material-icons large">keyboard_arrow_down</i>
     </div>
-  </nav>
 
-  <ul class="section table-of-contents side-contents">
-    <li><a href="#about-me">about me</a></li>
-    <li><a href="#technologies">technologies</a></li>
-    <li><a href="#work">work</a></li>
-    <li><a href="#contact">contact</a></li>
-  </ul>
+    <% include ../partials/section_aboutme %>
 
-  <% include ../partials/section_splash %>
+    <% include ../partials/section_technologies %>
 
-  <div class="row">
-    <i class="col s1 offset-s5 arrow material-icons large">keyboard_arrow_down</i>
-  </div>
+    <% include ../partials/section_work %>
 
-  <% include ../partials/section_aboutme %>
-
-  <% include ../partials/section_technologies %>
-
-  <% include ../partials/section_work %>
-
-</body>
+  </body>
 
 </html>
