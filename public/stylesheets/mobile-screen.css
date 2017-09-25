@@ -28,22 +28,24 @@
   .side-contents{
     display: none;
   }
+
   .hide-for-mobile {
     display: none;
   }
+
   .show-for-mobile {
     display: block;
   }
-  .work-holder{
-    width: 100%;
+
+  .work-holder > article {
+    width: 98%;
+    display: block;
   }
-  .work-holder > div {
-    width: 98% ;
-    display: block ;
-  }
+
   .work-backdrop {
     height: auto;
   }
+
   .title-underline {
     width: 62% !important;
   }

@@ -42,7 +42,7 @@
   width: 90%;
 }
 
-.work-holder > div {
+.work-holder > article {
   display: inline-block;
   display: -moz-inline-box;
   *display: inline; /* For IE7 */
