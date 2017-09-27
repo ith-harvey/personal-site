@@ -1,8 +1,7 @@
 
+$('.scrollspy').scrollSpy();
 
-$(document).ready( function () {
-
-  $('.scrollspy').scrollSpy({scrollOffset: 0});
+$(document).ready(function () {
 
   var $window = $(window);
 

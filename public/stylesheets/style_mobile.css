@@ -2,6 +2,7 @@
   html {
     width: 100%;
     min-width: 0px;
+    font-size: 12px;
   }
   .container {
     margin: 0 auto;
@@ -31,17 +32,12 @@
   }
   .title-underline {
     width: 62% !important;
+    margin-top: -10px;
   }
   .centered-div {
     width: 100%;
   }
   .contact-backdrop {
     margin-bottom: 3rem;
-  }
-}
-
-@media all and (max-width:370px) and (min-device-width: 0px) {
-  .nav-mat {
-    display: none;
   }
 }

@@ -1,15 +1,6 @@
 .work-backdrop h2 {
   color: #5c5757;
-}
-
-.img-signature-background {
-  transform: rotate(-30deg);
-  opacity: .02;
-  position: absolute;
-  margin-left: -325px;
-  margin-top: -200px;
-  z-index: -3;
-  height: 125%;
+  /*margin-bottom: 5px;*/
 }
 
 .title-work-above {
@@ -30,13 +21,13 @@
 }
 
 .card-mini-image {
-  height: 2.5rem;
+  height: 40px;
   background-color: white;
 }
 
 .card-mini-button {
   margin-right: 5px;
-  height: 2.5rem;
+  height: 40px;
 }
 
 .work-holder {

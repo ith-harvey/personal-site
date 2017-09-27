@@ -21,7 +21,7 @@ html, body {
   position: fixed;
   overflow-y: hidden;
   width: 20%;
-  height: 20%;
+  /*height: 550px;*/
   visibility: hidden;
 }
 
