@@ -1,20 +1,17 @@
-
-
 .logo-skill {
   visibility: hidden;
 }
 
 .logo-skill-js {
-    height: 2.5rem;
-    margin-top: .5%;
-    margin-left: 2%;
-
+  height: 2.5rem;
+  margin-top: .5%;
+  margin-left: 2%;
 }
 
 .logo-skill-node {
-    height: 2.5rem;
-    margin-top: .5%;
-    margin-left: 2%;
+  height: 2.5rem;
+  margin-top: .5%;
+  margin-left: 2%;
 }
 
 .logo-skill-react {

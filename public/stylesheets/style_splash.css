@@ -1,0 +1,21 @@
+.splash {
+  background-color: #489ac9;
+}
+
+.splash p {
+  color: white;
+}
+
+.img-profile {
+  width: 10rem;
+  height: 10rem;
+}
+
+.splash-content-1 h2 {
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.splash-content-1, .splash-content-2, .splash-statement-1, .splash-statement-2, .splash-statement-3 {
+  visibility: hidden;
+}

@@ -1,0 +1,38 @@
+.mega-header {
+  position: relative;
+  width: 90%;
+  margin-top: -1%;
+  margin-left: -2.5%;
+  z-index: -100;
+}
+
+.mega-header-mobile {
+  position: relative;
+  width: 90%;
+  margin-top: -1%;
+  margin-left: -1.5%;
+  z-index: -100;
+}
+
+.mockup-contain {
+  height: 20rem;
+  margin-left: 10%;
+}
+
+.img-mockup-phone {
+  height: 20rem;
+  position: absolute;
+  margin-top: -5%;
+}
+
+.img-mockup-laptop {
+  height: 20rem;
+}
+
+.about-margin {
+  margin-top: 50px;
+}
+
+.img-mockup-phone, .img-mockup-laptop {
+  visibility: hidden;
+}

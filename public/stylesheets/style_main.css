@@ -1,0 +1,58 @@
+html {
+  width: 100%;
+  font-size: 16px;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 80%;
+}
+
+.nav-mat {
+  display: none;
+}
+
+.side-contents {
+  position: fixed;
+  overflow-y: hidden;
+  width: 20%;
+  height: 20%;
+  visibility: hidden;
+}
+
+.splash, .green-backdrop {
+  height: 100%;
+  width: 100%;
+}
+
+.work-backdrop, .contact-backdrop {
+  width: 100%;
+  height: auto;
+}
+
+.green-backdrop, .contact-backdrop {
+  margin: 8rem 0 0 0;
+  background-color: white;
+}
+
+h1 {
+  color: white;
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: white;
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  font-size: 4rem;
+}
+
+.padding-right {
+  margin-right: 8px;
+}

@@ -1,5 +1,6 @@
-
-
+.work-backdrop h2 {
+  color: #5c5757;
+}
 
 .img-signature-background {
   transform: rotate(-30deg);
@@ -11,7 +12,7 @@
   height: 125%;
 }
 
-.title-work-above{
+.title-work-above {
   height: 2.5rem;
 }
 
@@ -37,6 +38,7 @@
   margin-right: 5px;
   height: 2.5rem;
 }
+
 .work-holder {
   margin: 0 auto;
   width: 90%;
@@ -45,8 +47,10 @@
 .work-holder > article {
   display: inline-block;
   display: -moz-inline-box;
-  *display: inline; /* For IE7 */
-  zoom: 1; /* Trigger hasLayout */
+  *display: inline;
+  /* For IE7 */
+  zoom: 1;
+  /* Trigger hasLayout */
   width: 31.7%;
   text-align: left;
   vertical-align: top;
@@ -66,7 +70,7 @@
   min-width: 30%;
 }
 
-.inner-card-left{
+.inner-card-left {
   margin-right: 2%;
 }
 

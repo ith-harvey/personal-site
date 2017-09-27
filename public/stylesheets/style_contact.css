@@ -1,22 +1,22 @@
-.div-center-container{
+.div-center-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
-.centered-div{
+.centered-div {
   width: 60%;
   text-align: center;
 }
 
-.centered-inner-title{
+.centered-inner-title h2{
   width: 100%;
   margin-bottom: 5rem;
   color: #41ba7d;
 }
 
-.centered-inner-text{
+.centered-inner-text {
   width: 70%;
   margin: 0 auto;
 }
